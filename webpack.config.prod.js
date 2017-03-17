@@ -5,7 +5,7 @@ const nodeEnv = process.env.NODE_ENV || 'production';
 
 module.exports = {
   context: resolve(__dirname, './'),
-  entry: ['./client/reduxstagram'],
+  entry: ['./client/index'],
   output: {
     filename: 'bundle.js',
     path: resolve(__dirname, 'dist'),

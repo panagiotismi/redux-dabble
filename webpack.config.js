@@ -9,7 +9,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './client/reduxstagram'
+    './client/index'
   ],
   output: {
     filename: 'bundle.js',

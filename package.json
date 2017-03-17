@@ -5,9 +5,9 @@
   "scripts": {
     "start": "webpack-dev-server --progress",
     "clean": "rimraf dist",
-    "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
-    "postbuild": "copyfiles index.html dist",
-    "build": "npm run clean && npm run build:webpack && npm run postbuild",
+    "bundle": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
+    "postbundle": "copyfiles index.html dist",
+    "build": "npm run clean && npm run bundle && npm run postbundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
