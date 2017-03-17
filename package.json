@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Just dabbling with Redux",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --progress",
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
     "postbuild": "copyfiles index.html dist",
