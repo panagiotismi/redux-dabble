@@ -1,10 +1,10 @@
 import React from 'react';
 // import css from './styles/style.styl';
 
-const App = () => (
+const Root = () => (
   <div>
     <h2>Hey</h2>
   </div>
 );
 
-export default App;
+export default Root;
