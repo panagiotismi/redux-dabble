@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Just dabbling with Redux",
   "scripts": {
+    "start": "webpack-dev-server",
+    "clean": "rimraf dist",
+    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,6 +16,14 @@
   "author": "mixlos",
   "license": "MIT",
   "dependencies": {
+    "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
+    "react-router-redux": "^5.0.0-alpha.3",
+    "redux": "^3.6.0",
+    "rimraf": "^2.6.1",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
