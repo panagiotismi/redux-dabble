@@ -4,10 +4,10 @@ const webpack = require('webpack');
 const nodeEnv = process.env.NODE_ENV || 'production';
 
 module.exports = {
-  context: resolve(__dirname, 'client'),
+  context: resolve(__dirname, './'),
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './client/reduxstagram'
   ],
@@ -18,9 +18,10 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    hot: true,
-    contentBase: resolve(__dirname, 'dist'),
-    publicPath: '/static/'
+    host: 'localhost',
+    port: 3000,
+    historyApiFallback: true,
+    hot: true
   },
   module: {
     rules: [
@@ -41,12 +42,14 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
+      comments: false,
       compress: {
         warnings: false,
         screw_ie8: true
       }
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+    new webpack.NoEmitOnErrorsPlugin()
   ]
 };

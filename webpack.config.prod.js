@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const nodeEnv = process.env.NODE_ENV || 'production';
 
 module.exports = {
-  context: resolve(__dirname, 'client'),
+  context: resolve(__dirname, './'),
   entry: ['./client/reduxstagram'],
   output: {
     filename: 'bundle.js',
@@ -31,6 +31,7 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true,
+      comments: false,
       compress: {
         warnings: false,
         screw_ie8: true
