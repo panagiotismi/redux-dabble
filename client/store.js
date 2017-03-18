@@ -11,10 +11,7 @@ export const history = createHistory();
 const middleware = routerMiddleware(history);
 
 // The following is for redux-devtools to work
-const composeEnhancers = composeWithDevTools({
-  actionSanitizer: true,
-  stateSanitizer: true,
-});
+const composeEnhancers = composeWithDevTools({});
 
 const defaultState = { posts, comments };
 const store = createStore(
