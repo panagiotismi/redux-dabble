@@ -17,6 +17,7 @@
   "author": "mixlos",
   "license": "MIT",
   "dependencies": {
+    "history": "^4.6.1",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -24,6 +25,7 @@
     "react-router-dom": "^4.0.0",
     "react-router-redux": "^5.0.0-alpha.3",
     "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.0",
     "rimraf": "^2.6.1",
     "stylus": "^0.54.5"
   },
@@ -35,6 +37,7 @@
     "babel-preset-stage-3": "^6.22.0",
     "copyfiles": "^1.2.0",
     "css-loader": "^0.27.3",
+    "raven-js": "^3.12.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "style-loader": "^0.14.1",
     "stylus-loader": "^3.0.1",
