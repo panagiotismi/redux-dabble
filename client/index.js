@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
-import Root from './components/Root';
+import App from './components/App';
 
 import './styles/style.styl';
 
@@ -16,8 +16,8 @@ const hotRender = (Component) => {
   );
 };
 
-hotRender(Root);
+hotRender(App);
 
 if (module.hot) {
-  module.hot.accept('./components/Root', () => hotRender(Root));
+  module.hot.accept('./components/App', () => hotRender(App));
 }
