@@ -1,7 +1,7 @@
 // increment likes
-export const increment = index => ({
+export const increment = postId => ({
   type: 'INCREMENT_LIKES',
-  index
+  postId
 });
 
 // add comment

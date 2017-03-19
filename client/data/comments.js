@@ -27,11 +27,11 @@ const comments = {
   ],
   'BAPIPRjQce9': [
     {
-      'text': 'Those are cute! They &apos;re like silver dollar pancakes.',
+      'text': 'Those are cute! They \'re like silver dollar pancakes.',
       'user': 'rrsimonsen'
     },
     {
-      'text': 'I like baby pancakes but gluten free please!! I&apos;ll bring the coffee!! See you in 6 days!!!!!! 😝😛😝♥️',
+      'text': 'I like baby pancakes but gluten free please!! I\'ll bring the coffee!! See you in 6 days!!!!!! 😝😛😝♥️',
       'user': 'terzisn'
     },
     {
@@ -55,7 +55,7 @@ const comments = {
       'user': 'wesbos'
     },
     {
-      'text': '@haaps thanks! It&apos;s a Jenn air - so nice to cool with!',
+      'text': '@haaps thanks! It\'s a Jenn air - so nice to cool with!',
       'user': 'wesbos'
     },
     {
@@ -65,11 +65,11 @@ const comments = {
   ],
   'BAF_KY4wcRY': [
     {
-      'text': 'Looking great Wes! I&apos;d like to see the other side of the room too.',
+      'text': 'Looking great Wes! I\'d like to see the other side of the room too.',
       'user': 'axcdnt'
     },
     {
-      'text': 'I&apos;ve never caught your podcast. Have one right? Btw - they don&apos;t have a Canary pillow? 😝',
+      'text': 'I\'ve never caught your podcast. Have one right? Btw - they don\'t have a Canary pillow? 😝',
       'user': 'henrihelvetica'
     },
     {
@@ -81,7 +81,7 @@ const comments = {
       'user': 'alexbaumgertner'
     },
     {
-      'text': '@axcdnt that is where I put all the junk. I&apos;ll have to clean that side too @henrihelvetica no podcast yet! @pmgllc ohh yeah! @alexbaumgertner yep - the main one is 4K - I&apos;m loving it',
+      'text': '@axcdnt that is where I put all the junk. I\'ll have to clean that side too @henrihelvetica no podcast yet! @pmgllc ohh yeah! @alexbaumgertner yep - the main one is 4K - I\'m loving it',
       'user': 'wesbos'
     },
     {
@@ -131,7 +131,7 @@ const comments = {
   ],
   '_XpJcrwcSn': [
     {
-      'text': 'Super congrats! That&apos;s wicked cool and looks great.',
+      'text': 'Super congrats! That\'s wicked cool and looks great.',
       'user': 'pmgllc'
     },
     {
@@ -174,7 +174,7 @@ const comments = {
   ],
   '1rhFawccs': [
     {
-      'text': 'What&apos;s your lighting source?',
+      'text': 'What\'s your lighting source?',
       'user': 'seth_mcleod'
     },
     {
@@ -191,7 +191,7 @@ const comments = {
   ],
   'oTZ0zQcWt': [
     {
-      'text': 'Love the coat! Where&apos;s it from? Lol',
+      'text': 'Love the coat! Where\'s it from? Lol',
       'user': '_lindersss'
     }
   ],
@@ -208,11 +208,11 @@ const comments = {
       'user': 'henrihelvetica'
     },
     {
-      'text': 'I&apos;m with @jonasbad on this. What we gotta do? : D',
+      'text': 'I\'m with @jonasbad on this. What we gotta do? : D',
       'user': 'datamoshr'
     },
     {
-      'text': '@jonasbad @datamoshr I&apos;ll post them up on my blog soon!',
+      'text': '@jonasbad @datamoshr I\'ll post them up on my blog soon!',
       'user': 'wesbos'
     },
     {
@@ -230,7 +230,7 @@ const comments = {
   ],
   'fasqlQceO': [
     {
-      'text': 'Where&apos;s lux at? 💤?',
+      'text': 'Where\'s lux at? 💤?',
       'user': 'henrihelvetica'
     },
     {
@@ -262,7 +262,7 @@ const comments = {
       'user': 'kalibrix'
     },
     {
-      'text': '@courtneyeveline I know! My friend gave it to her and I wanted a matching one but only Lux can pull it off. She&apos;s so fancy 😉',
+      'text': '@courtneyeveline I know! My friend gave it to her and I wanted a matching one but only Lux can pull it off. She\'s so fancy 😉',
       'user': 'kaitbos'
     },
     {
@@ -270,7 +270,7 @@ const comments = {
       'user': 'jennlensink'
     },
     {
-      'text': 'You&apos;ll have to meet her soon @kalibrix!!',
+      'text': 'You\'ll have to meet her soon @kalibrix!!',
       'user': 'kaitbos'
     },
     {
@@ -286,13 +286,13 @@ const comments = {
       'user': 'br11x'
     },
     {
-      'text': '@br11x I did a teespring a few months ago - maybe I&apos;ll do another one soon',
+      'text': '@br11x I did a teespring a few months ago - maybe I\'ll do another one soon',
       'user': 'wesbos'
     }
   ],
   'B3eiIwcYV': [
     {
-      'text': 'If you get in the mood for authentic Italian pizza, check out @backspaceaustin - it&apos;s👌🏻',
+      'text': 'If you get in the mood for authentic Italian pizza, check out @backspaceaustin - it\'s👌🏻',
       'user': 'dessie.ann'
     },
     {

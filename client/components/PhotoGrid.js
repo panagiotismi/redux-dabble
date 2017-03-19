@@ -3,14 +3,14 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import Photo from './Photo';
-import * as actionCreators from '../actions/actionCreators';
+import { increment } from '../actions/actionCreators';
 
 const PhotoGrid = props => (
   <div className="photo-grid">
-    {props.posts.map((post, index) =>
+    {props.posts.map(post =>
       <Photo
         key={post.id}
-        index={index}
+        postId={post.id}
         post={post}
         {...props}
       />
@@ -30,7 +30,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators(
-  actionCreators,
+  { increment },
   dispatch
 );
 

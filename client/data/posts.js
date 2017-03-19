@@ -31,7 +31,7 @@ const posts = [
   },
   {
     'code': '-hZh6IQcfN',
-    'caption': 'New Stickers just came in. I&apos;ll do another mailing in a few weeks if you want some. #javascript',
+    'caption': 'New Stickers just came in. I\'ll do another mailing in a few weeks if you want some. #javascript',
     'likes': 66,
     'id': '1126293663140399053',
     'display_src': 'https://scontent.cdninstagram.com/hphotos-xap1/t51.2885-15/e35/11875511_1562439187344831_813588280_n.jpg'
@@ -45,7 +45,7 @@ const posts = [
   },
   {
     'code': 'BAhvZrRwcfu',
-    'caption': 'Tried poke for the first time at @pokehbar. Delicious! It&apos;s like a bowl of sushi',
+    'caption': 'Tried poke for the first time at @pokehbar. Delicious! It\'s like a bowl of sushi',
     'likes': 30,
     'id': '1162418651480049646',
     'display_src': 'https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/e35/12501993_1504179163220771_2060674913_n.jpg'
@@ -136,7 +136,7 @@ const posts = [
   },
   {
     'code': '-oTZ0zQcWt',
-    'caption': 'It&apos;s too early. Send coffee.',
+    'caption': 'It\'s too early. Send coffee.',
     'likes': 81,
     'id': '1128237044221461933',
     'display_src': 'https://scontent.cdninstagram.com/hphotos-xtf1/t51.2885-15/e35/12328347_990748230999662_1512917342_n.jpg'
@@ -164,7 +164,7 @@ const posts = [
   },
   {
     'code': '-FpTyHQcau',
-    'caption': 'I&apos;m in Austin for a conference and doing some training. Enjoying some local brew with my baby.',
+    'caption': 'I\'m in Austin for a conference and doing some training. Enjoying some local brew with my baby.',
     'likes': 82,
     'id': '1118481761857291950',
     'display_src': 'https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/e35/11326072_550275398458202_1726754023_n.jpg'
