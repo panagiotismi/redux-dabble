@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Comments = ({ postId, comments, addComment, removeComment }) => {
-  let [author, commentText] = [null, null];
+  let [form, author, commentText] = [null, null, null];
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addComment(postId, author.value, commentText.value);
+    form.reset();
   };
 
   return (
@@ -17,14 +18,21 @@ const Comments = ({ postId, comments, addComment, removeComment }) => {
           <p>
             <strong>{comment.user}</strong>
             {comment.text}
-            <button className="remove-comment">
+            <button
+              className="remove-comment"
+              onClick={() => removeComment(postId, comment.id)}
+            >
               <i className="fa fa-times" />
             </button>
           </p>
         </div>
       ))}
       {/* form for adding comments */}
-      <form className="comment-form" onSubmit={handleSubmit}>
+      <form
+        className="comment-form"
+        ref={f => (form = f)}
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           placeholder="author"
