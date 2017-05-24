@@ -17,6 +17,7 @@
   "author": "mixlos",
   "license": "MIT",
   "dependencies": {
+    "generate-safe-id": "^1.0.2",
     "history": "^4.6.1",
     "prop-types": "^15.5.10",
     "react": "^15.4.2",

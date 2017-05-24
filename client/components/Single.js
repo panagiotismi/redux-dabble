@@ -14,13 +14,12 @@ const Single = (props) => {
   return (
     <div className="single-photo">
       <Photo
-        key={postId}
-        postId={postId}
         post={post}
         comments={postComments}
         increment={props.increment}
       />
       <Comments
+        postId={postId}
         comments={postComments}
         addComment={props.addComment}
         removeComment={props.removeComment}

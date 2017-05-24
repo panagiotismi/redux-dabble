@@ -1,31 +1,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Comments = props => (
-  <div>
-    {props.comments.map(c => (
-      <div className="comment">
-        <p>
-          <strong>{c.user}</strong>
-          {c.text}
-          <button className="remove-comment">
-            <i className="fa fa-times" />
-          </button>
-        </p>
-      </div>
-    ))}
-    <form ref="commentForm" className="comment-form">
-      <input type="text" ref="author" placeholder="author" />
-      <input type="text" ref="comment" placeholder="comment" />
-      <input type="submit" hidden />
-    </form>
-  </div>
-);
+const Comments = ({ postId, comments, addComment, removeComment }) => {
+  let [author, commentText] = [null, null];
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addComment(postId, author.value, commentText.value);
+  };
+
+  return (
+    <div>
+      {/* existing comments  */}
+      {comments.map(comment => (
+        <div className="comment" key={comment.id}>
+          <p>
+            <strong>{comment.user}</strong>
+            {comment.text}
+            <button className="remove-comment">
+              <i className="fa fa-times" />
+            </button>
+          </p>
+        </div>
+      ))}
+      {/* form for adding comments */}
+      <form className="comment-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="author"
+          ref={input => (author = input)}
+        />
+        <input
+          type="text"
+          placeholder="comment"
+          ref={input => (commentText = input)}
+        />
+        <input type="submit" hidden />
+      </form>
+
+    </div>
+  );
+};
 
 Comments.propTypes = {
+  postId: PropTypes.string.isRequired,
   comments: PropTypes.arrayOf(
     PropTypes.object.isRequired
   ).isRequired,
+  addComment: PropTypes.func.isRequired,
+  removeComment: PropTypes.func.isRequired,
 };
 
 export default Comments;
