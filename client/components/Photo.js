@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import CSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -42,17 +43,17 @@ const Photo = ({ post, comments, increment }) => (
 );
 
 Photo.propTypes = {
-  post: React.PropTypes.shape({
-    caption: React.PropTypes.string.isRequired,
-    code: React.PropTypes.string.isRequired,
-    display_src: React.PropTypes.string.isRequired,
-    id: React.PropTypes.string.isRequired,
-    likes: React.PropTypes.number.isRequired,
+  post: PropTypes.shape({
+    caption: PropTypes.string.isRequired,
+    code: PropTypes.string.isRequired,
+    display_src: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    likes: PropTypes.number.isRequired,
   }).isRequired,
-  comments: React.PropTypes.objectOf(
-    React.PropTypes.array
+  comments: PropTypes.objectOf(
+    PropTypes.array
   ).isRequired,
-  increment: React.PropTypes.func.isRequired,
+  increment: PropTypes.func.isRequired,
 };
 
 export default Photo;

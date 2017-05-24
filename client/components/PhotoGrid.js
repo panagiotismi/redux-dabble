@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
@@ -19,8 +20,8 @@ const PhotoGrid = props => (
 );
 
 PhotoGrid.propTypes = {
-  posts: React.PropTypes.arrayOf(
-    React.PropTypes.object.isRequired
+  posts: PropTypes.arrayOf(
+    PropTypes.object.isRequired
   ).isRequired,
 };
 
