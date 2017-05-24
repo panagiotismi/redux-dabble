@@ -13,7 +13,8 @@ const PhotoGrid = props => (
         key={post.id}
         postId={post.id}
         post={post}
-        {...props}
+        comments={props.comments[post.code] || []}
+        increment={props.increment}
       />
     )}
   </div>
@@ -23,6 +24,7 @@ PhotoGrid.propTypes = {
   posts: PropTypes.arrayOf(
     PropTypes.object.isRequired
   ).isRequired,
+  increment: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({

@@ -3,20 +3,27 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import Photo from './Photo';
-// import Comments from './Comments';
+import Comments from './Comments';
 import * as actionCreators from '../actions/actionCreators';
 
 const Single = (props) => {
   const postId = props.match.params.postId;
   const post = props.posts.find(p => p.code === postId);
+  const postComments = props.comments[postId] || [];
+
   return (
     <div className="single-photo">
       <Photo
         key={postId}
         postId={postId}
         post={post}
-        comments={props.comments}
+        comments={postComments}
         increment={props.increment}
+      />
+      <Comments
+        comments={postComments}
+        addComment={props.addComment}
+        removeComment={props.removeComment}
       />
     </div>
   );
@@ -36,6 +43,8 @@ Single.propTypes = {
     url: PropTypes.string.isRequired,
   }).isRequired,
   increment: PropTypes.func.isRequired,
+  addComment: PropTypes.func.isRequired,
+  removeComment: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({

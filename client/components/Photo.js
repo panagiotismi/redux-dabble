@@ -32,9 +32,7 @@ const Photo = ({ post, comments, increment }) => (
         </button>
         <Link className="button" to={`/view/${post.code}`}>
           <span className="speech-bubble">
-            <i className="fa fa-comments fa-lg" /> {
-              comments[post.code] ? comments[post.code].length : 0
-            }
+            <i className="fa fa-comments fa-lg" /> {comments.length}
           </span>
         </Link>
       </div>
@@ -50,8 +48,8 @@ Photo.propTypes = {
     id: PropTypes.string.isRequired,
     likes: PropTypes.number.isRequired,
   }).isRequired,
-  comments: PropTypes.objectOf(
-    PropTypes.array
+  comments: PropTypes.arrayOf(
+    PropTypes.object.isRequired
   ).isRequired,
   increment: PropTypes.func.isRequired,
 };
