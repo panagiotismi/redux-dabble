@@ -35,6 +35,7 @@ Single.propTypes = {
     path: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
   }).isRequired,
+  increment: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
