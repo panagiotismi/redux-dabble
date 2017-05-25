@@ -2,10 +2,14 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import Raven from 'raven-js';
 
 import App from './components/App';
+import { sentryUrl } from './data/config';
 
 import './styles/style.styl';
+
+Raven.config(sentryUrl).install();
 
 const hotRender = (Component) => {
   render(
