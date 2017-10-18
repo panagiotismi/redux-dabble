@@ -11,7 +11,7 @@ import './styles/style.styl';
 
 Raven.config(sentryUrl).install();
 
-const hotRender = (Component) => {
+const hotRender = Component => {
   render(
     <AppContainer>
       <Component />

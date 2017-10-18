@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Comments = ({ postId, comments, addComment, removeComment }) => {
   let [form, author, commentText] = [null, null, null];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     addComment(postId, author.value, commentText.value);
     form.reset();
@@ -45,16 +45,13 @@ const Comments = ({ postId, comments, addComment, removeComment }) => {
         />
         <input type="submit" hidden />
       </form>
-
     </div>
   );
 };
 
 Comments.propTypes = {
   postId: PropTypes.string.isRequired,
-  comments: PropTypes.arrayOf(
-    PropTypes.object.isRequired
-  ).isRequired,
+  comments: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
   addComment: PropTypes.func.isRequired,
   removeComment: PropTypes.func.isRequired,
 };

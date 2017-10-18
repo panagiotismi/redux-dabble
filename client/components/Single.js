@@ -6,18 +6,14 @@ import Photo from './Photo';
 import Comments from './Comments';
 import * as actionCreators from '../actions/actionCreators';
 
-const Single = (props) => {
+const Single = props => {
   const postId = props.match.params.postId;
   const post = props.posts.find(p => p.code === postId);
   const postComments = props.comments[postId] || [];
 
   return (
     <div className="single-photo">
-      <Photo
-        post={post}
-        comments={postComments}
-        increment={props.increment}
-      />
+      <Photo post={post} comments={postComments} increment={props.increment} />
       <Comments
         postId={postId}
         comments={postComments}
@@ -29,12 +25,8 @@ const Single = (props) => {
 };
 
 Single.propTypes = {
-  posts: PropTypes.arrayOf(
-    PropTypes.object.isRequired
-  ).isRequired,
-  comments: PropTypes.objectOf(
-    PropTypes.array.isRequired
-  ).isRequired,
+  posts: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  comments: PropTypes.objectOf(PropTypes.array.isRequired).isRequired,
   match: PropTypes.shape({
     isExact: PropTypes.bool.isRequired,
     params: PropTypes.object.isRequired,
