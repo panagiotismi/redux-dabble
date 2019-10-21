@@ -17,13 +17,13 @@
   "author": "mixlos",
   "license": "MIT",
   "dependencies": {
-    "generate-safe-id": "^1.0.2",
+    "generate-safe-id": "^1.0.3",
     "history": "^4.10.1",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-redux": "^7.1.1",
-    "react-router-dom": "^5.0.1",
+    "react-router-dom": "^5.1.2",
     "react-router-redux": "^4.0.8",
     "react-transition-group": "^4.3.0",
     "redux": "^4.0.4",
@@ -32,7 +32,7 @@
     "stylus": "^0.54.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
+    "@babel/core": "^7.6.4",
     "ajv": "^6.10.2",
     "ajv-errors": "^1.0.1",
     "babel-loader": "^8.0.6",
@@ -42,10 +42,10 @@
     "copyfiles": "^2.1.1",
     "css-loader": "^3.2.0",
     "raven-js": "^3.27.2",
-    "react-hot-loader": "^4.12.14",
+    "react-hot-loader": "^4.12.15",
     "style-loader": "^1.0.0",
     "stylus-loader": "^3.0.2",
-    "webpack": "^4.40.2",
-    "webpack-dev-server": "^3.8.1"
+    "webpack": "^4.41.2",
+    "webpack-dev-server": "^3.8.2"
   }
 }
