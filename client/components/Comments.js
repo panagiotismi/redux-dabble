@@ -19,6 +19,7 @@ const Comments = ({ postId, comments, addComment, removeComment }) => {
             <strong>{comment.user}</strong>
             {comment.text}
             <button
+              type="button"
               className="remove-comment"
               onClick={() => removeComment(postId, comment.id)}
             >

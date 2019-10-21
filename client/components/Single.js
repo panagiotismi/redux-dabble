@@ -6,19 +6,26 @@ import Photo from './Photo';
 import Comments from './Comments';
 import * as actionCreators from '../actions/actionCreators';
 
-const Single = props => {
-  const postId = props.match.params.postId;
-  const post = props.posts.find(p => p.code === postId);
-  const postComments = props.comments[postId] || [];
+const Single = ({
+  match,
+  posts,
+  comments,
+  increment,
+  addComment,
+  removeComment,
+}) => {
+  const { postId } = match.params;
+  const post = posts.find(p => p.code === postId);
+  const postComments = comments[postId] || [];
 
   return (
     <div className="single-photo">
-      <Photo post={post} comments={postComments} increment={props.increment} />
+      <Photo post={post} comments={postComments} increment={increment} />
       <Comments
         postId={postId}
         comments={postComments}
-        addComment={props.addComment}
-        removeComment={props.removeComment}
+        addComment={addComment}
+        removeComment={removeComment}
       />
     </div>
   );
@@ -43,4 +50,7 @@ const mapStateToProps = state => ({
   comments: state.comments,
 });
 
-export default connect(mapStateToProps, actionCreators)(Single);
+export default connect(
+  mapStateToProps,
+  actionCreators
+)(Single);

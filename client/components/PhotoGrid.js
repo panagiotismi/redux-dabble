@@ -6,25 +6,24 @@ import { connect } from 'react-redux';
 import Photo from './Photo';
 import { increment } from '../actions/actionCreators';
 
-const PhotoGrid = props => (
+const PhotoGrid = ({ posts, comments, inc }) => (
   <div className="photo-grid">
-    {props.posts.map(post =>
+    {posts.map(post => (
       <Photo
         key={post.id}
         postId={post.id}
         post={post}
-        comments={props.comments[post.code] || []}
-        increment={props.increment}
+        comments={comments[post.code] || []}
+        increment={inc}
       />
-    )}
+    ))}
   </div>
 );
 
 PhotoGrid.propTypes = {
-  posts: PropTypes.arrayOf(
-    PropTypes.object.isRequired
-  ).isRequired,
-  increment: PropTypes.func.isRequired,
+  posts: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  comments: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  inc: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
@@ -32,9 +31,10 @@ const mapStateToProps = state => ({
   comments: state.comments,
 });
 
-const mapDispatchToProps = dispatch => bindActionCreators(
-  { increment },
-  dispatch
-);
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ increment }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(PhotoGrid);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PhotoGrid);
